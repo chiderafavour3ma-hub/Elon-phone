@@ -1,0 +1,1120 @@
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELON PHONES | Premium iPhones & Flagship Gadgets Nigeria</title>
+  <meta name="description" content="Nigeria's premier destination for brand new and pristine certified iPhones, flagship smartphones, and genuine Apple accessories." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#09090B',
+            carbon: '#121215',
+            surface: '#1A1A1E',
+            surfaceLight: '#24242A',
+            gold: {
+              300: '#E8D29F',
+              400: '#D8BA76',
+              500: '#C5A059',
+              600: '#A98338',
+              700: '#866524',
+            },
+            muted: '#8E8E93',
+            borderDark: '#26262D'
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif']
+          },
+          boxShadow: {
+            'gold-subtle': '0 4px 24px -6px rgba(197, 160, 89, 0.15)',
+            'gold-card': '0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(197, 160, 89, 0.25)',
+            'card-elevated': '0 20px 40px -15px rgba(0, 0, 0, 0.7)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Gold Metallic Gradient & Utilities */
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #F5E5C0 0%, #C5A059 50%, #9B7933 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #E2C27F 0%, #C5A059 50%, #A98338 100%);
+    }
+
+    .border-gold-subtle {
+      border-color: rgba(197, 160, 89, 0.25);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #09090B;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272E;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C5A059;
+    }
+
+    /* Subtle backdrop blur fallback */
+    .nav-blur {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .badge-shimmer {
+      background: linear-gradient(90deg, rgba(197, 160, 89, 0.1) 0%, rgba(197, 160, 89, 0.25) 50%, rgba(197, 160, 89, 0.1) 100%);
+      background-size: 200% 100%;
+      animation: shimmer 4s infinite linear;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+  </style>
+</head>
+
+<body class="bg-obsidian text-[#F2F2F7] font-sans antialiased selection:bg-gold-500 selection:text-obsidian overflow-x-hidden min-h-screen flex flex-col justify-between">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-carbon border-b border-borderDark/80 text-xs py-2 px-4 text-center text-muted flex items-center justify-center gap-3">
+    <span class="inline-flex items-center gap-1.5 text-gold-400 font-medium">
+      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+      Lagos & Nationwide Delivery Available
+    </span>
+    <span class="hidden md:inline text-borderDark">|</span>
+    <span class="hidden md:inline">Same-Day Pickup & Inspection in Ikeja / Lekki by Appointment</span>
+    <span class="hidden md:inline text-borderDark">|</span>
+    <a href="#contact" class="text-white hover:text-gold-400 underline underline-offset-2 transition-colors">Direct Desk Support</a>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-0 z-40 w-full transition-all duration-300 bg-obsidian/90 nav-blur border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-lg bg-carbon border border-gold-500/40 flex items-center justify-center text-gold-400 font-display font-bold text-xl shadow-inner group-hover:border-gold-400 transition-colors">
+          E
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-lg tracking-wider text-white flex items-center gap-1">
+            ELON <span class="text-gold-400 font-medium">PHONES</span>
+          </span>
+          <span class="text-[9px] uppercase tracking-[0.2em] text-muted -mt-1 font-semibold">Flagship Devices</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+        <a href="#" class="hover:text-gold-400 transition-colors">Home</a>
+        <a href="#products" onclick="filterCatalog('iphone')" class="hover:text-gold-400 transition-colors">iPhones</a>
+        <a href="#products" onclick="filterCatalog('android')" class="hover:text-gold-400 transition-colors">Android</a>
+        <a href="#products" onclick="filterCatalog('accessories')" class="hover:text-gold-400 transition-colors">Accessories</a>
+        <a href="#experience" class="hover:text-gold-400 transition-colors">Why Elon</a>
+        <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/2348000000000?text=Hello%20Elon%20Phones,%20I'd%20like%20to%20inquire%20about%20your%20available%20devices." 
+           target="_blank" 
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-emerald-950/40 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-900/40 hover:border-emerald-500/60 transition-all duration-200">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+
+        <a href="#products" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-gold-gradient text-obsidian shadow-gold-subtle hover:brightness-110 active:scale-95 transition-all">
+          <span>Explore Catalog</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-gray-300 hover:text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon-bars" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-carbon/95 border-b border-borderDark px-6 py-6 space-y-4">
+      <div class="flex flex-col space-y-3 font-medium text-base">
+        <a href="#" class="text-white hover:text-gold-400 py-1" onclick="closeMobileMenu()">Home</a>
+        <a href="#products" class="text-gray-300 hover:text-gold-400 py-1" onclick="filterCatalog('iphone'); closeMobileMenu();">iPhones Catalog</a>
+        <a href="#products" class="text-gray-300 hover:text-gold-400 py-1" onclick="filterCatalog('android'); closeMobileMenu();">Android Flagships</a>
+        <a href="#products" class="text-gray-300 hover:text-gold-400 py-1" onclick="filterCatalog('accessories'); closeMobileMenu();">Apple & Power Accessories</a>
+        <a href="#experience" class="text-gray-300 hover:text-gold-400 py-1" onclick="closeMobileMenu()">Why Elon Phones</a>
+        <a href="#contact" class="text-gray-300 hover:text-gold-400 py-1" onclick="closeMobileMenu()">Store & Contact</a>
+      </div>
+      <div class="pt-4 border-t border-borderDark flex flex-col gap-2.5">
+        <a href="https://wa.me/2348000000000?text=Hello%20Elon%20Phones,%20I'm%20contacting%20you%20from%20your%20website." target="_blank" class="w-full text-center py-2.5 rounded-lg text-xs font-semibold bg-emerald-950 text-emerald-300 border border-emerald-500/40">
+          WhatsApp Instant Concierge
+        </a>
+        <a href="#products" onclick="closeMobileMenu()" class="w-full text-center py-2.5 rounded-lg text-xs font-semibold bg-gold-gradient text-obsidian font-bold">
+          Shop Available Stock
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative pt-8 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+      <!-- Background Ambient Grid and Glow (Restrained) -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#141417_1px,transparent_1px),linear-gradient(to_bottom,#141417_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40 pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-gold-500/30 bg-gold-500/5 text-gold-300 text-xs font-medium tracking-wide">
+              <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+              Pristine & Factory Sealed Devices in Nigeria
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+              Your Next iPhone <br class="hidden sm:inline" />
+              <span class="text-gold-gradient">Starts Here.</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-muted max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Experience the pinnacle of Apple craftsmanship. Hand-inspected iPhone 15 series, certified pre-owned flagships, and authentic accessories with transparent pricing and direct WhatsApp order confirmation.
+            </p>
+
+            <!-- Action CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#products" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-sm bg-gold-gradient text-obsidian hover:shadow-gold-subtle hover:brightness-105 active:scale-95 transition-all text-center flex items-center justify-center gap-2">
+                <span>Shop iPhones</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+
+              <a href="https://wa.me/2348000000000?text=Hello%20Elon%20Phones,%20I%20am%20looking%20for%20a%20device%20today." target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-semibold text-sm bg-surface text-gray-200 border border-borderDark hover:border-gold-500/50 hover:text-white transition-all text-center flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 fill-current" viewBox="0 0 24 24">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+                </svg>
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Key Proof Points -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-borderDark/60 max-w-lg mx-auto lg:mx-0 text-left">
+              <div>
+                <p class="text-xs text-muted uppercase tracking-wider">Device Health</p>
+                <p class="text-sm font-bold text-white mt-0.5">100% Tested & Clean</p>
+              </div>
+              <div>
+                <p class="text-xs text-muted uppercase tracking-wider">Dispatch Speed</p>
+                <p class="text-sm font-bold text-white mt-0.5">Same-Day Lagos</p>
+              </div>
+              <div>
+                <p class="text-xs text-muted uppercase tracking-wider">Verification</p>
+                <p class="text-sm font-bold text-white mt-0.5">Physical Inspection</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Realistic Showcase Card -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              
+              <!-- Subtle Background Aura -->
+              <div class="absolute -inset-1.5 bg-gradient-to-r from-gold-600/20 via-gold-400/10 to-transparent rounded-3xl blur-xl opacity-60"></div>
+              
+              <!-- Showcase Container -->
+              <div class="relative bg-carbon border border-borderDark rounded-2xl p-6 shadow-2xl">
+                <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-gold-400"></span>
+                    <span class="text-xs font-semibold tracking-wider uppercase text-gray-300">Flagship Spotlight</span>
+                  </div>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-surface border border-white/10 text-gold-300">Grade A+ / Sealed</span>
+                </div>
+
+                <!-- Product High Quality Graphic Representation -->
+                <div class="relative h-72 sm:h-80 w-full overflow-hidden rounded-xl bg-gradient-to-b from-[#17171C] to-obsidian flex items-center justify-center group cursor-pointer" onclick="openProductModal(1)">
+                  <img 
+                    src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=80" 
+                    alt="iPhone 15 Pro Max Natural Titanium" 
+                    class="object-contain h-full w-full transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div class="absolute bottom-3 left-3 right-3 bg-obsidian/85 backdrop-blur-md px-3 py-2 rounded-lg border border-white/10 flex items-center justify-between">
+                    <div>
+                      <p class="text-xs font-semibold text-white">iPhone 15 Pro Max</p>
+                      <p class="text-[11px] text-muted">Natural Titanium • 256GB</p>
+                    </div>
+                    <span class="text-xs font-bold text-gold-400 font-mono">₦ 1,750,000</span>
+                  </div>
+                </div>
+
+                <div class="mt-4 flex items-center justify-between text-xs text-muted pt-1">
+                  <span class="flex items-center gap-1 text-emerald-400 font-medium">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Ready for Instant Dispatch
+                  </span>
+                  <button onclick="openProductModal(1)" class="text-white hover:text-gold-400 font-semibold underline underline-offset-4">
+                    View Specifications &rarr;
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / RETAIL VALUE PILLARS (NO FAKE METRICS) -->
+    <section id="experience" class="py-12 bg-carbon/50 border-y border-borderDark/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          
+          <div class="p-5 rounded-xl bg-surface/50 border border-white/5 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-carbon border border-gold-500/20 flex items-center justify-center text-gold-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-semibold text-white text-sm">Genuine & Verified Stock</h3>
+            <p class="text-xs text-muted leading-relaxed">Factory unlocked, original Apple components, clean IMEI, and 100% genuine guaranteed devices.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface/50 border border-white/5 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-carbon border border-gold-500/20 flex items-center justify-center text-gold-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+            </div>
+            <h3 class="font-semibold text-white text-sm">Transparent Naira Pricing</h3>
+            <p class="text-xs text-muted leading-relaxed">Real-time daily market rates reflecting current FX without hidden fees or surprise markups.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface/50 border border-white/5 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-carbon border border-gold-500/20 flex items-center justify-center text-gold-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="font-semibold text-white text-sm">Inspection Before Payment</h3>
+            <p class="text-xs text-muted leading-relaxed">Available in Lagos. Test cameras, TrueTone, FaceID, and battery performance prior to completion.</p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-surface/50 border border-white/5 space-y-2">
+            <div class="w-10 h-10 rounded-lg bg-carbon border border-gold-500/20 flex items-center justify-center text-gold-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <h3 class="font-semibold text-white text-sm">Direct WhatsApp Ordering</h3>
+            <p class="text-xs text-muted leading-relaxed">Personal concierge to handle device configuration, videos of available units, and receipt generation.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATALOG SECTION -->
+    <section id="products" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-6 border-b border-borderDark gap-6">
+        <div>
+          <div class="flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-wider mb-2">
+            <span>Current Inventory</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            <span>Real-Time Lagos Catalog</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Curated Device Catalog</h2>
+          <p class="text-muted text-sm mt-1 max-w-xl">
+            Browse our priority inventory of sealed & pristine iPhones, premium Android flagships, and certified accessories.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2 p-1.5 bg-carbon rounded-xl border border-borderDark self-start md:self-auto">
+          <button onclick="filterCatalog('all')" id="tab-all" class="catalog-tab px-4 py-2 text-xs font-semibold rounded-lg bg-surface text-white border border-gold-500/40 transition-all">
+            All Products
+          </button>
+          <button onclick="filterCatalog('iphone')" id="tab-iphone" class="catalog-tab px-4 py-2 text-xs font-semibold rounded-lg text-muted hover:text-white transition-all">
+            iPhones
+          </button>
+          <button onclick="filterCatalog('android')" id="tab-android" class="catalog-tab px-4 py-2 text-xs font-semibold rounded-lg text-muted hover:text-white transition-all">
+            Android Flagships
+          </button>
+          <button onclick="filterCatalog('accessories')" id="tab-accessories" class="catalog-tab px-4 py-2 text-xs font-semibold rounded-lg text-muted hover:text-white transition-all">
+            Accessories
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        <!-- Products injected via JavaScript for smooth filtering & modal triggers -->
+      </div>
+
+      <!-- Custom Request Notice Banner -->
+      <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-carbon via-surface to-carbon border border-borderDark flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <div>
+            <h4 class="text-white font-semibold text-base">Looking for a specific specification or rare color?</h4>
+            <p class="text-muted text-xs mt-0.5">We source custom storage capacities (512GB / 1TB) and dual physical SIM variants upon WhatsApp request.</p>
+          </div>
+        </div>
+        <a href="https://wa.me/2348000000000?text=Hello%20Elon%20Phones,%20I'm%20requesting%20a%20custom%20device%20order." target="_blank" class="shrink-0 px-6 py-3 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all">
+          Make a Custom Request
+        </a>
+      </div>
+
+    </section>
+
+    <!-- CONTACT & SHOWROOM SECTION -->
+    <section id="contact" class="py-20 bg-carbon border-t border-borderDark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Details -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold uppercase tracking-wider">
+              <span>Direct Inquiries</span>
+            </div>
+            <h2 class="text-3xl font-extrabold text-white">Visit or Contact Us</h2>
+            <p class="text-muted text-sm leading-relaxed">
+              Connect with our retail representatives for live stock checks, video verification of physical units, or scheduling an in-person device pickup.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              
+              <!-- Location -->
+              <div class="flex items-start gap-3.5 p-4 rounded-xl bg-surface border border-white/5">
+                <div class="w-9 h-9 rounded-lg bg-carbon border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-medium text-muted">Showroom & Pickup Point</p>
+                  <p class="text-sm font-semibold text-white mt-0.5">Computer Village / Victoria Island Hub (Placeholder)</p>
+                  <p class="text-xs text-muted/80">Lagos State, Nigeria</p>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="flex items-start gap-3.5 p-4 rounded-xl bg-surface border border-white/5">
+                <div class="w-9 h-9 rounded-lg bg-carbon border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-medium text-muted">WhatsApp Concierge Desk</p>
+                  <p class="text-sm font-semibold text-white mt-0.5">+234 (0) 800 000 0000 <span class="text-xs font-normal text-muted">(Demo Line)</span></p>
+                  <p class="text-xs text-muted/80">Available for fast quotation & invoice issuance</p>
+                </div>
+              </div>
+
+              <!-- Instagram / Socials -->
+              <div class="flex items-start gap-3.5 p-4 rounded-xl bg-surface border border-white/5">
+                <div class="w-9 h-9 rounded-lg bg-carbon border border-pink-500/30 flex items-center justify-center text-pink-400 shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" stroke-width="2"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-medium text-muted">Official Instagram</p>
+                  <p class="text-sm font-semibold text-white mt-0.5">@elonphones.ng <span class="text-xs font-normal text-muted">(Placeholder)</span></p>
+                  <p class="text-xs text-muted/80">Daily stock updates & unboxing clips</p>
+                </div>
+              </div>
+
+              <!-- Working Hours -->
+              <div class="flex items-start gap-3.5 p-4 rounded-xl bg-surface border border-white/5">
+                <div class="w-9 h-9 rounded-lg bg-carbon border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0 mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/><polyline points="12 6 12 12 16 14" stroke-width="2"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-medium text-muted">Operating Hours</p>
+                  <p class="text-sm font-semibold text-white mt-0.5">Mon – Sat: 9:00 AM – 7:00 PM</p>
+                  <p class="text-xs text-muted/80">Sunday: Closed for order fulfillment & logistics</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Interactive Fast Message Dispatcher Form -->
+          <div class="lg:col-span-7 bg-surface rounded-2xl p-6 sm:p-8 border border-borderDark flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between border-b border-borderDark pb-4 mb-6">
+                <div>
+                  <h3 class="text-lg font-bold text-white">Direct WhatsApp Inquiry Form</h3>
+                  <p class="text-xs text-muted">Fill out this quick form to generate a structured WhatsApp quote request.</p>
+                </div>
+                <span class="px-2.5 py-1 rounded bg-gold-500/10 text-gold-400 text-xs font-mono font-medium border border-gold-500/20">Instant Match</span>
+              </div>
+
+              <form id="direct-inquiry-form" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-medium text-gray-300 mb-1.5">Your Full Name</label>
+                    <input type="text" id="inq-name" required placeholder="e.g. Chinedu Adeleke" class="w-full bg-carbon border border-borderDark rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-500" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-medium text-gray-300 mb-1.5">Delivery City / State</label>
+                    <input type="text" id="inq-location" required placeholder="e.g. Lekki Phase 1, Lagos" class="w-full bg-carbon border border-borderDark rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-500" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-medium text-gray-300 mb-1.5">Device of Interest</label>
+                    <select id="inq-device" class="w-full bg-carbon border border-borderDark rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                      <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+                      <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+                      <option value="iPhone 15">iPhone 15</option>
+                      <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+                      <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+                      <option value="Samsung Galaxy S24 Ultra">Samsung Galaxy S24 Ultra</option>
+                      <option value="Apple Watch Ultra 2">Apple Watch Ultra 2</option>
+                      <option value="AirPods Pro 2">AirPods Pro 2</option>
+                      <option value="Original 20W Fast Charger / Case">Original 20W Fast Charger / Case</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-xs font-medium text-gray-300 mb-1.5">Condition Preference</label>
+                    <select id="inq-condition" class="w-full bg-carbon border border-borderDark rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-gold-500">
+                      <option value="Brand New Factory Sealed">Brand New Factory Sealed</option>
+                      <option value="Clean Open Box / Grade A+">Clean Open Box / Grade A+</option>
+                      <option value="Wholesale Inquiry">Wholesale / Multiple Units</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-medium text-gray-300 mb-1.5">Additional Notes or Trade-in Info (Optional)</label>
+                  <textarea id="inq-notes" rows="3" placeholder="Specify preferred color, storage capacity (e.g. 256GB), or old device trade-in details..." class="w-full bg-carbon border border-borderDark rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold-500"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 px-6 rounded-xl font-bold text-sm bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-950/50 active:scale-[0.99] transition-all">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                  <span>Launch WhatsApp with this Inquiry</span>
+                </button>
+              </form>
+            </div>
+            
+            <p class="text-[11px] text-muted text-center mt-4">
+              Clicking will open WhatsApp with your customized order parameters pre-filled.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER CTA STRIP -->
+    <section class="py-12 bg-gradient-to-b from-carbon to-obsidian border-t border-borderDark/60 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Find Your Next Device Today.</h2>
+        <p class="text-muted text-sm mt-2 max-w-lg mx-auto">Premium gadgets inspected with meticulous care. Fast nationwide logistics and physical pickup available.</p>
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
+          <a href="#products" onclick="filterCatalog('iphone')" class="px-6 py-2.5 rounded-xl font-bold text-xs bg-gold-gradient text-obsidian hover:brightness-105 transition-all">
+            Shop iPhones
+          </a>
+          <a href="https://wa.me/2348000000000?text=Hello%20Elon%20Phones,%20I'd%20like%20to%20chat%20with%20a%20sales%20representative." target="_blank" class="px-6 py-2.5 rounded-xl font-semibold text-xs bg-surface text-gray-200 border border-borderDark hover:border-gold-500/40 transition-all">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-obsidian border-t border-borderDark py-12 text-xs text-muted">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">
+        
+        <!-- Brand Info -->
+        <div class="col-span-2 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded bg-carbon border border-gold-500/40 flex items-center justify-center text-gold-400 font-display font-bold text-sm">
+              E
+            </div>
+            <span class="font-display font-bold text-base tracking-wider text-white">
+              ELON <span class="text-gold-400 font-medium">PHONES</span>
+            </span>
+          </div>
+          <p class="text-muted text-xs leading-relaxed max-w-sm">
+            A premium Nigerian gadget retailer specializing mainly in brand new and pristine certified iPhones, premier Android flagships, and authentic charging hardware.
+          </p>
+          <div class="text-[11px] text-gray-400 pt-1 font-mono">
+            Demo Store Catalog • Nigeria
+          </div>
+        </div>
+
+        <!-- Quick Links: iPhones -->
+        <div>
+          <h5 class="font-bold text-white uppercase tracking-wider text-[11px] mb-3">iPhones</h5>
+          <ul class="space-y-2">
+            <li><a href="#products" onclick="filterCatalog('iphone')" class="hover:text-gold-400 transition-colors">iPhone 15 Pro Max</a></li>
+            <li><a href="#products" onclick="filterCatalog('iphone')" class="hover:text-gold-400 transition-colors">iPhone 15 Pro</a></li>
+            <li><a href="#products" onclick="filterCatalog('iphone')" class="hover:text-gold-400 transition-colors">iPhone 15 Standard</a></li>
+            <li><a href="#products" onclick="filterCatalog('iphone')" class="hover:text-gold-400 transition-colors">iPhone 14 Series</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links: Android & Gear -->
+        <div>
+          <h5 class="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Android & Wear</h5>
+          <ul class="space-y-2">
+            <li><a href="#products" onclick="filterCatalog('android')" class="hover:text-gold-400 transition-colors">Samsung Galaxy Ultra</a></li>
+            <li><a href="#products" onclick="filterCatalog('accessories')" class="hover:text-gold-400 transition-colors">AirPods Pro 2</a></li>
+            <li><a href="#products" onclick="filterCatalog('accessories')" class="hover:text-gold-400 transition-colors">Apple Watch Ultra 2</a></li>
+            <li><a href="#products" onclick="filterCatalog('accessories')" class="hover:text-gold-400 transition-colors">Apple 20W Adapters</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Hours -->
+        <div>
+          <h5 class="font-bold text-white uppercase tracking-wider text-[11px] mb-3">Contact Direct</h5>
+          <ul class="space-y-2 text-xs">
+            <li><span class="text-gray-400">WhatsApp:</span> +234 800 000 0000</li>
+            <li><span class="text-gray-400">Location:</span> Lagos, Nigeria</li>
+            <li><span class="text-gray-400">Hours:</span> Mon-Sat: 9am - 7pm</li>
+            <li><a href="https://instagram.com" target="_blank" class="text-gold-400 hover:underline">@elonphones.ng</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal / Demo Disclaimer -->
+      <div class="pt-6 border-t border-borderDark flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <p class="text-[11px] text-gray-400">
+          &copy; <span id="current-year"></span> ELON PHONES. All rights reserved. Designed for premium retail demonstration.
+        </p>
+        <p class="text-[11px] text-gray-400">
+          All product names, logos, and brands are property of their respective owners.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PRODUCT DETAIL MODAL ================= -->
+  <div id="product-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 md:p-8 bg-black/85 backdrop-blur-md overflow-y-auto" onclick="closeModalOnBackdrop(event)">
+    <div class="relative w-full max-w-3xl bg-carbon border border-borderDark rounded-2xl shadow-2xl overflow-hidden my-auto" onclick="event.stopPropagation()">
+      
+      <!-- Close Button -->
+      <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface/80 hover:bg-surface border border-white/10 flex items-center justify-center text-gray-300 hover:text-white transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+        
+        <!-- Left: Image Preview -->
+        <div class="md:col-span-6 bg-gradient-to-b from-surface to-obsidian p-6 sm:p-8 flex flex-col justify-between items-center relative border-b md:border-b-0 md:border-r border-borderDark">
+          <div class="w-full flex justify-between items-center text-xs">
+            <span id="modal-category" class="text-[11px] font-mono uppercase tracking-wider text-gold-400">iPhone</span>
+            <span id="modal-stock-badge" class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-950 text-emerald-300 border border-emerald-500/30">In Stock</span>
+          </div>
+
+          <div class="my-6 w-full h-64 sm:h-72 flex items-center justify-center">
+            <img id="modal-image" src="" alt="Device" class="max-h-full max-w-full object-contain filter drop-shadow-xl" />
+          </div>
+
+          <div class="w-full text-center">
+            <span id="modal-selected-color-label" class="text-xs text-muted font-medium">Selected Color: Natural Titanium</span>
+          </div>
+        </div>
+
+        <!-- Right: Options & WhatsApp Action -->
+        <div class="md:col-span-6 p-6 sm:p-8 flex flex-col justify-between space-y-6">
+          
+          <div class="space-y-4">
+            <div>
+              <h3 id="modal-title" class="text-2xl font-extrabold text-white">iPhone 15 Pro Max</h3>
+              <div class="mt-2 flex items-baseline gap-2">
+                <span id="modal-price" class="text-2xl font-bold text-gold-400 font-mono">₦ 1,750,000</span>
+                <span class="text-xs text-muted">(Estimated / Placeholder)</span>
+              </div>
+            </div>
+
+            <!-- Color Swatches -->
+            <div id="modal-colors-container">
+              <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Select Color</label>
+              <div id="modal-color-swatches" class="flex flex-wrap gap-2.5">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <!-- Storage Selector -->
+            <div id="modal-storage-container">
+              <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Select Storage</label>
+              <div id="modal-storage-buttons" class="grid grid-cols-3 gap-2">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+
+            <!-- Key Specs Summary -->
+            <div>
+              <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1.5">Key Highlights</label>
+              <ul id="modal-specs" class="text-xs text-muted space-y-1.5 list-disc list-inside">
+                <!-- Injected via JS -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modal Action CTA -->
+          <div class="pt-4 border-t border-borderDark space-y-2.5">
+            <a id="modal-whatsapp-cta" href="#" target="_blank" class="w-full py-3.5 px-6 rounded-xl font-bold text-sm bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center gap-2.5 shadow-lg active:scale-[0.99] transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>Confirm & Order via WhatsApp</span>
+            </a>
+            <p class="text-[11px] text-muted text-center">
+              Direct live chat with representative to finalize dispatch.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & CATALOG ENGINE -->
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // WHATSAPP DEMO NUMBER
+    const WHATSAPP_NUMBER = "2348000000000";
+
+    // REALISTIC PRODUCT CATALOG DATA (Nigerian Gadget Market Focus)
+    const PRODUCTS = [
+      {
+        id: 1,
+        name: "iPhone 15 Pro Max",
+        category: "iphone",
+        tag: "Flagship Lead",
+        price: "₦ 1,750,000",
+        image: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "In Stock (Lagos)",
+        colors: ["Natural Titanium", "Black Titanium", "White Titanium", "Blue Titanium"],
+        storages: ["256GB", "512GB", "1TB"],
+        specs: [
+          "A17 Pro chip with 6-core GPU & ray tracing",
+          "Aerospace-grade titanium frame, lighter design",
+          "5x optical zoom telephoto lens",
+          "USB-C support with USB 3 speeds"
+        ]
+      },
+      {
+        id: 2,
+        name: "iPhone 15 Pro",
+        category: "iphone",
+        tag: "Pro Compact",
+        price: "₦ 1,520,000",
+        image: "https://images.unsplash.com/photo-1695048065057-de6d11624c9c?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "In Stock",
+        colors: ["Natural Titanium", "Black Titanium", "White Titanium", "Blue Titanium"],
+        storages: ["128GB", "256GB", "512GB"],
+        specs: [
+          "6.1-inch Super Retina XDR display with ProMotion 120Hz",
+          "A17 Pro flagship silicone architecture",
+          "Customizable Action Button",
+          "48MP main camera with advanced portrait modes"
+        ]
+      },
+      {
+        id: 3,
+        name: "iPhone 15",
+        category: "iphone",
+        tag: "Standard New",
+        price: "₦ 1,180,000",
+        image: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "In Stock",
+        colors: ["Black", "Pink", "Blue", "Green", "Yellow"],
+        storages: ["128GB", "256GB"],
+        specs: [
+          "Dynamic Island experience",
+          "48MP Main Camera with 2x Telephoto quality",
+          "Durable color-infused back glass",
+          "Universal USB-C charging connector"
+        ]
+      },
+      {
+        id: 4,
+        name: "iPhone 14 Pro Max",
+        category: "iphone",
+        tag: "Certified Pristine",
+        price: "₦ 1,290,000",
+        image: "https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "Available (Grade A+)",
+        colors: ["Deep Purple", "Space Black", "Gold", "Silver"],
+        storages: ["128GB", "256GB", "512GB"],
+        specs: [
+          "Dynamic Island display & Always-On technology",
+          "A16 Bionic processing powerhouse",
+          "48MP camera sensor with Photonic Engine",
+          "100% Battery health certified units available"
+        ]
+      },
+      {
+        id: 5,
+        name: "iPhone 14 Pro",
+        category: "iphone",
+        tag: "Popular Choice",
+        price: "₦ 1,120,000",
+        image: "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "In Stock",
+        colors: ["Space Black", "Deep Purple", "Gold"],
+        storages: ["128GB", "256GB"],
+        specs: [
+          "6.1-inch ProMotion 120Hz display",
+          "A16 Bionic performance",
+          "Surgical-grade stainless steel body",
+          "Cinematic mode in 4K HDR at 24 fps"
+        ]
+      },
+      {
+        id: 6,
+        name: "Samsung Galaxy S24 Ultra",
+        category: "android",
+        tag: "Android Flagship",
+        price: "₦ 1,820,000",
+        image: "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "In Stock",
+        colors: ["Titanium Gray", "Titanium Black", "Titanium Violet"],
+        storages: ["256GB", "512GB"],
+        specs: [
+          "Snapdragon 8 Gen 3 for Galaxy with Galaxy AI",
+          "Built-in S Pen stylus support",
+          "200MP Quad Telephoto Camera System",
+          "Flat 6.8-inch Dynamic AMOLED 2X Display"
+        ]
+      },
+      {
+        id: 7,
+        name: "AirPods Pro (2nd Gen)",
+        category: "accessories",
+        tag: "USB-C Case",
+        price: "₦ 360,000",
+        image: "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "In Stock",
+        colors: ["White"],
+        storages: ["MagSafe Case (USB-C)"],
+        specs: [
+          "Up to 2x more Active Noise Cancellation",
+          "Adaptive Audio and Transparency mode",
+          "Personalized Spatial Audio with dynamic head tracking",
+          "Dust, sweat, and water-resistant (IP54)"
+        ]
+      },
+      {
+        id: 8,
+        name: "Apple Watch Ultra 2",
+        category: "accessories",
+        tag: "Titanium 49mm",
+        price: "₦ 1,150,000",
+        image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "Available",
+        colors: ["Natural Titanium (Alpine/Trail Band)"],
+        storages: ["49mm Cellular"],
+        specs: [
+          "3000-nit display with ultra-bright outdoor visibility",
+          "S9 SiP chip with Double Tap gesture control",
+          "Up to 36 hours regular use / 72 hours low power",
+          "Precision dual-frequency GPS system"
+        ]
+      },
+      {
+        id: 9,
+        name: "Apple 20W USB-C Adapter + Braided Cable",
+        category: "accessories",
+        tag: "Original Authentic",
+        price: "₦ 45,000",
+        image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=700&q=80",
+        inStock: true,
+        stockStatus: "In Stock",
+        colors: ["White"],
+        storages: ["Standard Retail Box"],
+        specs: [
+          "Fast-charge capable (50% charge in ~30 min)",
+          "Original Apple factory retail pack",
+          "Built-in surge protection against voltage fluctuations",
+          "Compatible with iPhone 11 through 15 Series"
+        ]
+      }
+    ];
+
+    // State
+    let currentCategory = 'all';
+    let selectedModalProduct = null;
+    let selectedColor = '';
+    let selectedStorage = '';
+
+    // Render Product Cards
+    function renderProducts(category = 'all') {
+      const container = document.getElementById('product-grid');
+      container.innerHTML = '';
+
+      const filtered = category === 'all' 
+        ? PRODUCTS 
+        : PRODUCTS.filter(p => p.category === category);
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = "group relative bg-carbon border border-borderDark hover:border-gold-500/40 rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 hover:shadow-gold-card";
+        
+        card.innerHTML = `
+          <div>
+            <!-- Header Tag & Stock -->
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[11px] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded bg-surface border border-white/5 text-gold-300">
+                ${p.tag}
+              </span>
+              <span class="inline-flex items-center gap-1 text-[11px] font-medium ${p.inStock ? 'text-emerald-400' : 'text-rose-400'}">
+                <span class="w-1.5 h-1.5 rounded-full ${p.inStock ? 'bg-emerald-400' : 'bg-rose-400'}"></span>
+                ${p.stockStatus}
+              </span>
+            </div>
+
+            <!-- Product Image -->
+            <div class="relative h-52 w-full rounded-xl bg-surface/60 overflow-hidden flex items-center justify-center p-3 mb-4 cursor-pointer" onclick="openProductModal(${p.id})">
+              <img src="${p.image}" alt="${p.name}" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="px-3.5 py-1.5 rounded-lg bg-obsidian/90 text-white text-xs font-semibold border border-white/20">
+                  Quick View
+                </span>
+              </div>
+            </div>
+
+            <!-- Title & Variant Details -->
+            <h3 class="text-base font-bold text-white group-hover:text-gold-300 transition-colors cursor-pointer" onclick="openProductModal(${p.id})">
+              ${p.name}
+            </h3>
+            <p class="text-xs text-muted mt-0.5">
+              ${p.colors.slice(0, 2).join(' • ')}${p.colors.length > 2 ? ' +' + (p.colors.length - 2) + ' more' : ''}
+            </p>
+          </div>
+
+          <!-- Footer Price & WhatsApp CTA -->
+          <div class="mt-5 pt-4 border-t border-borderDark/80">
+            <div class="flex items-baseline justify-between mb-3">
+              <div>
+                <span class="text-[10px] uppercase tracking-wider text-muted block">Market Price</span>
+                <span class="text-lg font-extrabold text-gold-400 font-mono">${p.price}</span>
+              </div>
+              <button onclick="openProductModal(${p.id})" class="text-xs text-gray-300 hover:text-white font-medium underline underline-offset-2">
+                Specs & Options
+              </button>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="openProductModal(${p.id})" class="w-full py-2.5 px-3 rounded-lg text-xs font-semibold bg-surface hover:bg-surfaceLight text-white border border-borderDark text-center transition-colors">
+                View Details
+              </button>
+              <button onclick="quickOrderWhatsApp(${p.id})" class="w-full py-2.5 px-3 rounded-lg text-xs font-bold bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/40 text-center flex items-center justify-center gap-1.5 transition-colors">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                <span>WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Tab Filter Trigger
+    function filterCatalog(category) {
+      currentCategory = category;
+      const tabs = ['all', 'iphone', 'android', 'accessories'];
+      tabs.forEach(tab => {
+        const btn = document.getElementById(`tab-${tab}`);
+        if(btn) {
+          if(tab === category) {
+            btn.className = "catalog-tab px-4 py-2 text-xs font-semibold rounded-lg bg-surface text-white border border-gold-500/40 transition-all";
+          } else {
+            btn.className = "catalog-tab px-4 py-2 text-xs font-semibold rounded-lg text-muted hover:text-white transition-all";
+          }
+        }
+      });
+      renderProducts(category);
+    }
+
+    // Open Interactive Product Modal
+    function openProductModal(id) {
+      const product = PRODUCTS.find(p => p.id === id);
+      if(!product) return;
+
+      selectedModalProduct = product;
+      selectedColor = product.colors[0];
+      selectedStorage = product.storages[0];
+
+      // Populate Elements
+      document.getElementById('modal-category').textContent = product.category.toUpperCase();
+      document.getElementById('modal-title').textContent = product.name;
+      document.getElementById('modal-price').textContent = product.price;
+      document.getElementById('modal-image').src = product.image;
+      document.getElementById('modal-image').alt = product.name;
+      document.getElementById('modal-stock-badge').textContent = product.stockStatus;
+      document.getElementById('modal-selected-color-label').textContent = `Color Selected: ${selectedColor}`;
+
+      // Color Swatches
+      const colorContainer = document.getElementById('modal-color-swatches');
+      colorContainer.innerHTML = '';
+      product.colors.forEach((color, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `px-3 py-1.5 rounded-lg text-xs font-medium border transition-all ${idx === 0 ? 'border-gold-400 bg-gold-500/10 text-white' : 'border-borderDark text-muted hover:border-gray-400'}`;
+        btn.textContent = color;
+        btn.onclick = () => {
+          selectedColor = color;
+          document.getElementById('modal-selected-color-label').textContent = `Color Selected: ${color}`;
+          Array.from(colorContainer.children).forEach(c => {
+            c.className = "px-3 py-1.5 rounded-lg text-xs font-medium border border-borderDark text-muted hover:border-gray-400 transition-all";
+          });
+          btn.className = "px-3 py-1.5 rounded-lg text-xs font-medium border border-gold-400 bg-gold-500/10 text-white transition-all";
+          updateModalWhatsAppLink();
+        };
+        colorContainer.appendChild(btn);
+      });
+
+      // Storage Buttons
+      const storageContainer = document.getElementById('modal-storage-buttons');
+      storageContainer.innerHTML = '';
+      product.storages.forEach((storage, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `py-2 px-2 rounded-lg text-xs font-semibold border text-center transition-all ${idx === 0 ? 'border-gold-400 bg-gold-500/10 text-white' : 'border-borderDark text-muted hover:border-gray-400'}`;
+        btn.textContent = storage;
+        btn.onclick = () => {
+          selectedStorage = storage;
+          Array.from(storageContainer.children).forEach(s => {
+            s.className = "py-2 px-2 rounded-lg text-xs font-semibold border border-borderDark text-muted hover:border-gray-400 text-center transition-all";
+          });
+          btn.className = "py-2 px-2 rounded-lg text-xs font-semibold border border-gold-400 bg-gold-500/10 text-white text-center transition-all";
+          updateModalWhatsAppLink();
+        };
+        storageContainer.appendChild(btn);
+      });
+
+      // Specs
+      const specsContainer = document.getElementById('modal-specs');
+      specsContainer.innerHTML = '';
+      product.specs.forEach(s => {
+        const li = document.createElement('li');
+        li.textContent = s;
+        specsContainer.appendChild(li);
+      });
+
+      updateModalWhatsAppLink();
+
+      // Show Modal
+      const modal = document.getElementById('product-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function updateModalWhatsAppLink() {
+      if(!selectedModalProduct) return;
+      const msg = `Hello Elon Phones, I'm interested in the ${selectedModalProduct.name}, ${selectedStorage}, ${selectedColor}. Please confirm availability and current price.`;
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+      document.getElementById('modal-whatsapp-cta').href = url;
+    }
+
+    function quickOrderWhatsApp(id) {
+      const product = PRODUCTS.find(p => p.id === id);
+      if(!product) return;
+      const msg = `Hello Elon Phones, I’m interested in the ${product.name} (${product.storages[0]}, ${product.colors[0]}). Please confirm availability and today's price.`;
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('product-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function closeModalOnBackdrop(e) {
+      if(e.target.id === 'product-modal') {
+        closeProductModal();
+      }
+    }
+
+    // Direct Contact Form Handler
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('inq-name').value.trim();
+      const location = document.getElementById('inq-location').value.trim();
+      const device = document.getElementById('inq-device').value;
+      const condition = document.getElementById('inq-condition').value;
+      const notes = document.getElementById('inq-notes').value.trim();
+
+      const message = `Hello Elon Phones,\n\nMy name is ${name} from ${location}.\nI am inquiring about:\n• Device: ${device}\n• Condition: ${condition}${notes ? `\n• Notes: ${notes}` : ''}\n\nPlease confirm availability and total cost. Thank you.`;
+
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    // Mobile Navigation Controls
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconBars = document.getElementById('menu-icon-bars');
+    const menuIconClose = document.getElementById('menu-icon-close');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isClosed = mobileMenu.classList.contains('hidden');
+      if (isClosed) {
+        mobileMenu.classList.remove('hidden');
+        menuIconBars.classList.add('hidden');
+        menuIconClose.classList.remove('hidden');
+      } else {
+        closeMobileMenu();
+      }
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('hidden');
+      menuIconBars.classList.remove('hidden');
+      menuIconClose.classList.add('hidden');
+    }
+
+    // Initial Load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts('all');
+    });
+
+    // Close modal on Escape Key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProductModal();
+      }
+    });
+  </script>
+</body>
+</html>
